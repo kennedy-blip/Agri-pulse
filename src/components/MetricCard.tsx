@@ -1,0 +1,3 @@
+import type { LucideIcon } from 'lucide-react';
+interface Props { label: string; value: string; change: string; icon: LucideIcon; tone: 'green'|'cyan'|'amber'|'lime'; }
+export default function MetricCard({label,value,change,icon:Icon,tone}:Props) { return <article className="metric-card"><div className="metric-top"><span>{label}</span><span className={`metric-icon ${tone}`}><Icon size={18}/></span></div><div className="metric-value mono">{value}</div><div className="metric-change"><span className="dot-green"/> {change}</div></article>; }
