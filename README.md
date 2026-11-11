@@ -4,7 +4,7 @@ AgriPulse is a responsive smart-agriculture workspace built with React 18, TypeS
 
 ## Features
 
-- Farm dashboard with acreage, soil moisture, harvest countdowns and planning-value estimates.
+- Farm dashboard with acreage, soil moisture, harvest countdowns and planning-value estimates.\n- Live Meru-area weather and a four-day forecast from Open-Meteo (network required; attribution included).
 - Crop batch creation, search, progress tracking and removal.
 - Soil nutrient and moisture controls with contextual, non-prescriptive recommendations.
 - Inventory temperature monitoring and a route/fuel planning estimator.
@@ -12,7 +12,7 @@ AgriPulse is a responsive smart-agriculture workspace built with React 18, TypeS
 - Browser localStorage persistence for crop batches, soil readings, inventory and irrigation preference.
 - Responsive dark agri-tech interface.
 
-> Weather, farm metrics, soil readings and logistics figures in this starter workspace are sample/demo data. They are not connected to live sensors, weather services, maps or market prices. Soil recommendations are general guidance, not a substitute for laboratory analysis or local agricultural extension advice.
+> Weather and the four-day forecast are fetched live from Open-Meteo for the configured Meru County coordinates. The weather feed is a model forecast, not a farm sensor reading. Crop batches, soil measurements, inventory, yield estimates and logistics assumptions remain local user-entered or illustrative planning data; the app does not yet connect to market prices, field sensors, a live map or a verified routing service. Soil recommendations are general guidance, not a substitute for laboratory analysis or local agricultural extension advice.\n\nOpen-Meteo data is provided under CC BY 4.0 and requires attribution. The free API is intended for non-commercial use; arrange the appropriate provider plan before commercial operation.
 
 ## Getting started
 
@@ -55,4 +55,4 @@ src/
 
 ## Next production steps
 
-Connect a trusted weather API, farm IoT/sensor ingestion, geocoding/routing provider and authenticated database before using this for operational decisions. Add server-side authorization, validation, audit logs and backups before storing real farm records.
+Add a licensed live market-price source, farm IoT/sensor ingestion, geocoding/routing provider and authenticated database before using this for operational decisions. Open-Meteo is currently used for the Meru forecast. Add server-side authorization, validation, audit logs and backups before storing real farm records.
